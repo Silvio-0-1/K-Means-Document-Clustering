@@ -9,7 +9,7 @@ The K-Means clustering algorithm is utilized to categorize text documents into c
 
 ```bash
 git clone https://github.com/Silvio-0-1/K-Means-Document-Clustering.git
-cd K-Means-Document-Clustering
+cd K-Means-Document-Clustering/src
 ```
 
 ### 2. Install dependencies:
