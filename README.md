@@ -19,6 +19,32 @@ Ensure you have Python and pip installed. Then, install the required packages:
 pip install -r requirements.txt
 ```
 
+### 3. Downloading Datasets:
+
+The `mini_newsgroups` and `20_newsgroups` datasets can't be included in the repository for their size.
+
+To use the datasets:
+
+1. Download it from the [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Twenty+Newsgroups).
+2. Extract the datasets and place it in the root directory of this project.
+
+After downloading and extracting, your project directory structure should look like this:
+
+```bash
+KMeans_Clustering_Project/
+│
+├── mini_newsgroups/
+│ ├── alt.atheism/
+│ ├── comp.graphics/
+│ ├── ...
+│ └── talk.religion.misc/
+│
+└── 20_newsgroups/
+├── alt.atheism/
+├── comp.graphics/
+├── ...
+└── talk.religion.misc/
+```
 ### 3. Preprocess the data and apply K-Means:
 The data is fetched from the dataset and the clustering algorithm is applied. Run the following command:
 
