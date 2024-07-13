@@ -10,7 +10,7 @@ The K-Means clustering algorithm is utilized to categorize text documents into c
 
 ```bash
 git clone https://github.com/Silvio-0-1/K-Means-Document-Clustering.git
-cd K-Means-Document-Clustering/src
+cd K-Means-Document-Clustering
 ```
 
 ### 2. Install dependencies:
@@ -63,14 +63,14 @@ K-Means-Document-Clustering/
 The data is fetched from the dataset and the clustering algorithm is applied. Run the following command:
 
 ```bash
-python k_mean.py
+python src/k_mean.py
 ```
 
 ### 5. Run the Flask application:
 Execute the following command to start the Flask web server:
 
 ```bash
-python app.py
+python src/app.py
 ```
 
 ### 6. Open your web browser and go to http://localhost:5000 to view the clustering results.
