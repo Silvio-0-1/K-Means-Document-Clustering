@@ -1,22 +1,15 @@
 # K-Means Document Clustering
 
-This project demonstrates K-Means Clustering applied to group similar documents from two datasets: mini_newsgroups and 20_newsgroups. The K-Means clustering algorithm is utilized to categorize text documents into clusters based on their content similarity. This project serves as an example of applying unsupervised machine learning techniques to analyze and categorize textual data.
+This project demonstrates K-Means Clustering applied to group similar documents from two datasets: mini_newsgroups and 20_newsgroups from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/113/twenty+newsgroups).
 
-## Features
-
-- Clustering Algorithm: Utilizes K-Means clustering to group documents.
-- Dataset:
-1. mini_newsgroups: Small subset of the 20 Newsgroups dataset.
-2. 20_newsgroups: Larger dataset containing news articles across various topics.
-- Visualization: Displays cluster results using matplotlib within a Flask web application.
-- Web Interface: Provides a user-friendly web interface to view cluster visualizations.
+The K-Means clustering algorithm is utilized to categorize text documents into clusters based on their content similarity. This project serves as an example of applying unsupervised machine learning techniques to analyze and categorize textual data.
 
 ## Set Up Instructions
 ### 1. Clone the repository:
 
 ```bash
-git clone <repository_url>
-cd <repository_directory>
+git clone https://github.com/Silvio-0-1/K-Means-Document-Clustering.git
+cd K-Means-Document-Clustering
 ```
 
 ### 2. Install dependencies:
@@ -41,11 +34,3 @@ python app.py
 ```
 
 ### 5. Open your web browser and go to http://localhost:5000 to view the clustering results.
-
-File Structure
-app.py: Flask application to serve the clustering visualization.
-lda.py: Script to perform data loading, preprocessing, clustering, and visualization.
-templates/index.html: HTML template for the web interface.
-static/images/: Directory to store generated cluster visualization images.
-Resources
-20 Newsgroups Dataset: Source of the dataset used in this project.
