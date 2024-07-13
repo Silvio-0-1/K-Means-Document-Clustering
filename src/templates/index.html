@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Means Clustering</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 30px;
+        }
+        .cluster-section {
+            margin-bottom: 50px;
+        }
+        .cluster-image {
+            width: 100%;
+            height: auto;
+        }
+        .cluster-title {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .intro-section {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 30px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        .intro-section h2 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .intro-section p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="intro-section">
+            <h2>K-Means Clustering</h2>
+            <p>The K-Means Clustering Algorithm is used to cluster similar documents from two folders: mini_newsgroups and 20_newsgroups. The resources are fetched from <a href="http://archive.ics.uci.edu/ml/datasets/Twenty+Newsgroups" target="_blank">UCI Machine Learning Repository</a>.</p>
+        </div>
+
+        <h2 class="cluster-title">Mini_Newsgroups Clusters</h2>
+        <div class="row cluster-section">
+            {% for cluster in mini_clusters %}
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{{ url_for('images', filename=cluster) }}" class="card-img-top cluster-image" alt="Cluster {{ loop.index }}">
+                        <div class="card-body">
+                            <h5 class="card-title">Cluster {{ loop.index }}</h5>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <h2 class="cluster-title">20_Newsgroups Clusters</h2>
+        <div class="row cluster-section">
+            {% for cluster in newsgroups_clusters %}
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{{ url_for('images', filename=cluster) }}" class="card-img-top cluster-image" alt="Cluster {{ loop.index }}">
+                        <div class="card-body">
+                            <h5 class="card-title">Cluster {{ loop.index }}</h5>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
