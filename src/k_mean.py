@@ -5,6 +5,8 @@ from sklearn.datasets import load_files
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.cluster import KMeans
 
+os.environ['LOKY_MAX_CPU_COUNT'] = '4'
+
 def load_data(data_dir):
     data = load_files(data_dir, encoding='latin1')
     return data
