@@ -1,6 +1,6 @@
 from flask import Flask, render_template, send_from_directory
 import os
-from lda import main as run_lda
+from k_mean import main as run_lda
 
 app = Flask(__name__)
 
@@ -9,7 +9,7 @@ def check_and_run_lda():
     if not os.path.exists(image_dir):
         os.makedirs(image_dir)
     images = os.listdir(image_dir)
-    if len(images) < 40:  # Assuming 20 clusters per dataset
+    if len(images) < 40:  
         run_lda()
 
 @app.route('/')
