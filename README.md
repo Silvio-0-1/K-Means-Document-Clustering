@@ -4,7 +4,8 @@ This project demonstrates K-Means Clustering applied to group similar documents 
 
 The K-Means clustering algorithm is utilized to categorize text documents into clusters based on their content similarity. This project serves as an example of applying unsupervised machine learning techniques to analyze and categorize textual data.
 
-## Set Up Instructions
+## Setup Instructions
+
 ### 1. Clone the repository:
 
 ```bash
@@ -31,32 +32,45 @@ To use the datasets:
 After downloading and extracting, your project directory structure should look like this:
 
 ```bash
-KMeans_Clustering_Project/
+K-Means-Document-Clustering/
 │
 ├── mini_newsgroups/
-│ ├── alt.atheism/
-│ ├── comp.graphics/
-│ ├── ...
-│ └── talk.religion.misc/
+│   ├── alt.atheism/
+│   ├── comp.graphics/
+│   ├── ...
+│   └── talk.religion.misc/
 │
 └── 20_newsgroups/
-├── alt.atheism/
-├── comp.graphics/
-├── ...
-└── talk.religion.misc/
+│   ├── alt.atheism/
+│   ├── comp.graphics/
+│   ├── ...
+│   └── talk.religion.misc/
+│
+├── src/
+│   ├── preprocessing.py
+│   ├── lda.py
+│   ├── visualize_clusters.py
+│   └── app.py
+│   ├── templates/
+│   └── index.html
+│
+├── requirements.txt
+│
+└── README.md
 ```
-### 3. Preprocess the data and apply K-Means:
+
+### 4. Preprocess the data and apply K-Means:
 The data is fetched from the dataset and the clustering algorithm is applied. Run the following command:
 
 ```bash
 python k_mean.py
 ```
 
-### 4. Run the Flask application:
+### 5. Run the Flask application:
 Execute the following command to start the Flask web server:
 
 ```bash
 python app.py
 ```
 
-### 5. Open your web browser and go to http://localhost:5000 to view the clustering results.
+### 6. Open your web browser and go to http://localhost:5000 to view the clustering results.
