@@ -74,3 +74,10 @@ python src/app.py
 ```
 
 ### 6. Open your web browser and go to http://localhost:5000 to view the clustering results.
+
+**Note:** After running the Flask application, cluster visualization images will be generated and stored in the `static/images/` folder. Each cluster will have its corresponding image named according to the cluster number.
+
+## 🔗 Connect On
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shubham-namasudra/)
+
